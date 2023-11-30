@@ -38,6 +38,7 @@
     {"name":"UI","order":5,"path":"folders/Sprites/UI.yy",},
     {"name":"Enemy UI","order":4,"path":"folders/Sprites/UI/Enemy UI.yy",},
     {"name":"Timelines","order":10,"path":"folders/Timelines.yy",},
+    {"name":"Enemy Scripts","order":5,"path":"folders/Scripts/Enemy Scripts.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oPlayerSpear","order":6,"path":"objects/oPlayerSpear/oPlayerSpear.yy",},
@@ -56,6 +57,7 @@
     {"name":"collision_line_point","order":1,"path":"scripts/collision_line_point/collision_line_point.yy",},
     {"name":"oMoonlightMedium","order":2,"path":"objects/oMoonlightMedium/oMoonlightMedium.yy",},
     {"name":"calculate_damage","order":4,"path":"scripts/calculate_damage/calculate_damage.yy",},
+    {"name":"oEnemyPlaceholder2","order":2,"path":"objects/oEnemyPlaceholder2/oEnemyPlaceholder2.yy",},
     {"name":"player_collisions","order":1,"path":"scripts/player_collisions/player_collisions.yy",},
     {"name":"sBullet","order":4,"path":"sprites/sBullet/sBullet.yy",},
     {"name":"sPlayerWings","order":3,"path":"sprites/sPlayerWings/sPlayerWings.yy",},

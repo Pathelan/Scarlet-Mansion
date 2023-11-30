@@ -2,7 +2,7 @@
 draw_self();
 
 
-if (enemyCurrentStagger > 0) {
+if (enemyCurrentStagger > 0 && oPlayerController.spearLastObjectHit.id != id) {
 	
 	// Draw Local Stagger Bar
 	var fillAmount = 0;
