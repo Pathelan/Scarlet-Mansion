@@ -73,7 +73,7 @@ if (image_index > 2 && image_index < 6) {
 					oPlayerController.alarm[0] = room_speed*7.5; // Remove Object Reference after 5 seconds.
 				} else {
 					// Stop Game from referencing objects that don't exist
-					oPlayerController.spearLastObjectHit = oCrosshair.id;
+					oPlayerController.spearLastObjectHit = oPlayerBody.id;
 				}
 				
 				

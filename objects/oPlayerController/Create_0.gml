@@ -5,6 +5,13 @@ instance_create_layer(x, y, "UI", oCrosshair);
 // Body Stats
 
 
+#region // Powerups
+powerup[0] = false; // Double Jump
+powerup[1] = false; // Enhanced Spear
+powerup[2] = false; // Stopwatch
+
+#endregion
+
 // Spear Stats
 spearLastObjectHit = oGame.object_index; // Last Object Hit with Spear.
 spearRadius = 14; // Radius of Attack
