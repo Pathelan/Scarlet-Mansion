@@ -20,6 +20,7 @@ if (distance_to_object(oPlayerBody) < 96 && moonlightTrackPlayer == false && isG
 }
 
 if (distance_to_object(oPlayerBody) < 4) {
+	oPlayerController.playerMoonlight += moonlightAmount;
 	instance_destroy();	
 }
 

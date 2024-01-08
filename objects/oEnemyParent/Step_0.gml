@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-apply_collisions();
+apply_collisions(usesGravity, gravityScale);
 
 #region Stagger
 
@@ -9,6 +9,8 @@ apply_collisions();
 if (enemyCurrentStagger >= enemyMaxStagger) {
 	if (!isStaggered) { // Slow Time and Zoom Camera
 		isStaggered = true;
+		isStunned = true; // Stun Enemy
+		
 		
 		start_slow(oPlayerController.staggerTimer, oPlayerController.staggerIntensity);
 		oCamera.alarm[0] = oPlayerController.staggerTimer; // Set Camera Reset Timer

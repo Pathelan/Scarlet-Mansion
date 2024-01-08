@@ -1,8 +1,11 @@
 
 draw_self();
 
+if (isStunned == true) {
+	draw_sprite(sVFXEnemyStun, -1, x, y-24);	
+}
 
-if (enemyCurrentStagger > 0) {
+if (enemyCurrentStagger > 0 && oPlayerController.spearLastObjectHit.id != id) {
 	
 	// Draw Local Stagger Bar
 	var fillAmount = 0;

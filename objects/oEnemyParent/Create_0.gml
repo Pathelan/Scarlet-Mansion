@@ -5,12 +5,17 @@ hspd = 0;
 vspd = 0;
 isGrounded = false;
 
+usesGravity = true;
+gravityScale = global.GRAVITY;
+
 #region Stagger
 enemyMaxStagger = irandom_range(1200, 1800);
 enemyCurrentStagger = 0;
 enemyStaggerResistance = irandom_range(10, 17);
 enemyStaggerDecayTimer = room_speed/5;
 isStaggered = false;
+
+isStunned = false; // Draws stunned VFX when true;
 
 enemyDamageMultiplier = 1; // Lower Value is Less Damage
 enemyStaggeredDamageMultiplier = 4; // Damage Multiplier when staggered.
