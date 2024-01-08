@@ -6,6 +6,12 @@ if (distance_to_point(mouse_x, mouse_y) > 4) {
 	image_angle = point_direction(x, y, mouse_x, mouse_y);
 }
 
+// Visuals
+if (oPlayerController.powerup[1]) {
+	sprite_index = sPlayerSpear_mk2;
+} else {
+	sprite_index = sPlayerSpear;
+}
 
 // Attack
 if (keyAttack && attackCooldown <= 0) {
@@ -61,7 +67,7 @@ if (image_index > 2 && image_index < 6) {
 				damageNumbers.damageNumber = damageAmount;
 				
 				// Camera Zoom
-				if (enemyCurrentStagger + staggerAmount >= enemyMaxStagger) {
+				if (enemyCurrentStagger + staggerAmount >= enemyMaxStagger && currentObjectHealth > 0) {
 					camera_zoom(oPlayerController.staggerCameraWidth, oPlayerController.staggerCameraHeight);
 					oCamera.state = cameraState.stagger;
 				}

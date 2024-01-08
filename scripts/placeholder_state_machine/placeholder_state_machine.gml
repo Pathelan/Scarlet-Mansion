@@ -42,13 +42,8 @@ function placeholder_state_machine(){
 				speed = 0;
 				
 				// Windup
-				if (windupTimeFrames > 0) {
-					windupTimeFrames --;	
-				} else {
-					attackTimeFrames = 0;
-					placeholderState = placeholderState.ATTACK;
-					stateShiftTimer = stateShiftTimerMax;
-				}
+				image_speed = 1;
+				sprite_index = sEnemyWindup;
 				
 				break;
 				
