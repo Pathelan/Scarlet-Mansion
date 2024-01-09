@@ -42,6 +42,5 @@ idlePositionY = y;
 
 chaseRange = 128; // The range the enemy will follow the player at.
 attackRange = 72; // The range needed to perform an attack;
-windupTimeFrames = 30; // How Long the windup is in seconds
 attackTimeFrames = 0; // How Often the enemy can attack
 followPosition = [0, 0]; // 2D Array of the last player position.

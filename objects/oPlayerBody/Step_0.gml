@@ -20,12 +20,6 @@ if (keyboard_check_pressed(ord("0"))) { // Toggle Debug
 	}
 }
 
-
-if (keyAim) {
-	var bullet = instance_create_layer(x, y, "Instances", oBullet);
-	bullet.direction += random_range(-5, 5)
-}
-
 if (keyboard_check_pressed(ord("R"))) {
 	game_restart();	
 }

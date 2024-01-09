@@ -2,9 +2,10 @@
 draw_self();
 
 
-if (oPlayerController.powerup[1] == true) {
+if (oPlayerController.powerup[0] == true) {
 	draw_sprite_ext(sPlayerWings, 0, x-8*playerDirection, y-6, playerDirection, 1, 0, c_white, 1);
 }
+
 
 
 // Debug

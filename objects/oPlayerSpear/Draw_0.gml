@@ -1,5 +1,11 @@
 /// @description Debug
-draw_self();
+if (drawSpear == true) {
+	draw_self();
+}
+
+if (fireCooldown > 0 && oPlayerController.powerup[1] == true) {
+	gui_spear_projectile_bar(fireCooldown, oPlayerController.spearAlternateCooldown)	
+}
 
 if (global.DEBUG == false) {
 	exit;	

@@ -12,5 +12,7 @@ if (playerMoonlight >= playerMaxMoonlight) {
 	playerHealth = playerMaxHealth;
 	
 	spearDamage += floor(spearDamage/10) + 5;
+	spearAlternateDamage += floor(spearDamage/10) + 15;
+	spearStaggerMultiplier += irandom_range(1, 3);
 }
 
