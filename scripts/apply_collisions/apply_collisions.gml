@@ -2,7 +2,7 @@
 /// @description Requires hspd, vspd, grav and isGrounded to work.
 
 function apply_collisions(applyGravity = true, grav = global.GRAVITY){
-	argument0 = applyGravity
+	argument0 = applyGravity;
 	argument1 = grav;
 	
 	#region Horizontal Collisions

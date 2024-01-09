@@ -9,12 +9,12 @@ function placeholder_state_machine(){
 						placeholderState = placeholderState.CHASE;
 						drawAlert = true;
 						isAlert = 0;
-						stateShiftTimer = stateShiftTimerMax;
+						stateShiftTimer = stateShiftTimerMax/2;
 						return;
 				}
 				
-				x = lerp(x, idlePositionX, 0.025);
-				y = lerp(y, idlePositionY, 0.025);
+				x = lerp(x, idlePositionX, 0.025*global.TIMESCALE);
+				y = lerp(y, idlePositionY, 0.025*global.TIMESCALE);
 				break;
 				
 			case placeholderState.CHASE:
@@ -28,12 +28,11 @@ function placeholder_state_machine(){
 				// Change to Attacking
 				if (distance_to_object(p) <= attackRange && stateShiftTimer <= 0) {
 						placeholderState = placeholderState.WINDUP;
-						windupTimeFrames = 30; // Reset Windup timer
 						stateShiftTimer = stateShiftTimerMax;
 						return;
 				}
 				
-				move_towards_point(p.x, p.y, 0.5);
+				move_towards_point(p.x, p.y, 0.75*global.TIMESCALE);
 				
 				break;
 				
@@ -42,7 +41,7 @@ function placeholder_state_machine(){
 				speed = 0;
 				
 				// Windup
-				image_speed = 1;
+				image_speed = 1*global.TIMESCALE;
 				sprite_index = sEnemyWindup;
 				
 				break;
@@ -51,7 +50,6 @@ function placeholder_state_machine(){
 				// Repeat Attack if Playeri s still in range.
 				if (distance_to_object(p) <= attackRange && stateShiftTimer <= 0) {
 						placeholderState = placeholderState.WINDUP;
-						windupTimeFrames = 30; // Reset Windup timer
 						stateShiftTimer = stateShiftTimerMax;
 						return;
 				}
@@ -66,7 +64,7 @@ function placeholder_state_machine(){
 				}
 				
 				if (attackTimeFrames > 0) {
-					attackTimeFrames --;	
+					attackTimeFrames -= 1*global.TIMESCALE;	
 				} else {
 					var proj = instance_create_layer(x, y, "Instances", oEnemyProjectile);	
 					proj.direction += random_range(-5, 5); 

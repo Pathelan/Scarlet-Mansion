@@ -10,7 +10,7 @@ function gui_healthbar(currentHealth, maxHealth){
 	
 	
 	draw_sprite_stretched_ext(sHealthBackground, 0, viewportWidth*.05 - 6, viewportHeight*.075-3, 524, 30, c_white, 1);
-	draw_sprite_stretched_ext(sHealth, 0, viewportWidth*.05, viewportHeight*.075, 512*fillAmount, 24, col, 1);
+	draw_sprite_stretched_ext(sHealthBar, 0, viewportWidth*.05, viewportHeight*.075, 512*fillAmount, 24, col, 1);
 	
 	
 	

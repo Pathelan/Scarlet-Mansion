@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sHealth",
-  "bbox_bottom": 23,
+  "name": "sSpearProjectileBar",
+  "bbox_bottom": 2,
   "bbox_left": 0,
-  "bbox_right": 63,
+  "bbox_right": 7,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 24,
+  "height": 3,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f39914c2-6b32-4db6-8a8a-602b17a501fe","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -35,8 +35,8 @@
     ],
     "highlightColour": 1728023040,
     "highlightStyle": 0,
-    "left": 16,
-    "right": 16,
+    "left": 2,
+    "right": 2,
     "tileMode": [
       0,
       0,
@@ -55,7 +55,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sHealth",
+    "name": "sSpearProjectileBar",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -77,13 +77,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1a15b0ce-21b3-48bf-865b-52180521b26e","path":"sprites/sHealth/sHealth.yy",},},},"Disabled":false,"id":"866e155a-34c7-4c05-81bc-e41057f432a5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1a15b0ce-21b3-48bf-865b-52180521b26e","path":"sprites/sSpearProjectileBar/sSpearProjectileBar.yy",},},},"Disabled":false,"id":"cefce7ab-8078-4b9f-a940-2bd31515b695","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 32,
-    "yorigin": 12,
+    "xorigin": 4,
+    "yorigin": 1,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -93,5 +93,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 64,
+  "width": 8,
 }

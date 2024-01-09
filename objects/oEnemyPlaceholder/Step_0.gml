@@ -28,25 +28,25 @@ if (idleMoveTimer > 0) {
 		idlePositionX = randX;
 		idlePositionY = randY;
 	}
-	idleMoveTimer = room_speed*random_range(2, 4);
+	idleMoveTimer = (room_speed*random_range(2, 4))*global.TIMESCALE;
 }
 
 // Alerted
 if (isAlert < 30) {
-	isAlert ++;
+	isAlert += 1*global.TIMESCALE;
 } else {
 	drawAlert = false;	
 }
 
 // Lost
 if (isLost < 30) {
-	isLost ++;
+	isLost += 1*global.TIMESCALE;
 } else {
 	drawLost = false;	
 }
 
 // State Changes
 if (stateShiftTimer > 0) {
-	stateShiftTimer --;	
+	stateShiftTimer -= 1*global.TIMESCALE;	
 }
 placeholder_state_machine();

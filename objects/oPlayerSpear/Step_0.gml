@@ -14,13 +14,27 @@ if (oPlayerController.powerup[1]) {
 }
 
 // Attack
-if (keyAttack && attackCooldown <= 0) {
+if (keyAttack && attackCooldown <= 0 && canAttack) {
 	image_speed = 1;
 	attackCooldown = oPlayerController.spearCooldown;
 }
 
 if (attackCooldown > 0) {
 	attackCooldown --;
+}
+
+// Alternate Attack
+if (keyAim && fireCooldown <= 0 && canFire && oPlayerController.powerup[1]) {
+		drawSpear = false;
+		canAttack = false;
+		canFire = false;
+		alarm[0] = room_speed;
+		
+		instance_create_layer(x, y, "Instances", oSpearProjectile);
+}
+
+if (fireCooldown > 0) {
+	fireCooldown --;
 }
 
 // Collisions

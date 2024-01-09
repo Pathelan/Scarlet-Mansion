@@ -8,7 +8,7 @@ playerHealth = playerMaxHealth;
 
 playerLevel = 1;
 playerMoonlight = 0;
-playerMaxMoonlight = 1000;
+playerMaxMoonlight = 600;
 
 
 #region // Powerups
@@ -26,6 +26,11 @@ spearFastCooldown = 40; // Cooldown of Attack in Frames, used after successfully
 spearDamage = 25; // Damage, modified by +/-20% when attacking
 spearDamageMultiplier = 1; // Damage Multiplier for upgrades.
 spearStaggerMultiplier = 40; // Increases the amount of stagger dealt.
+
+spearAlternateFire = false; // Allows the Spear to fire as a projectile.
+spearAlternateDamage = 180; // Damage Alternate Spear Damage Does
+spearAlternateStaggerMultiplier = 100; // How effective Spear Fire is at staggering
+spearAlternateCooldown = room_speed*8; // How Long it takes for spear to return to player.
 
 // Stagger Stats
 staggerTimer = 150; // Length time will be slowed in frames.
