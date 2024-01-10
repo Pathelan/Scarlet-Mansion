@@ -9,6 +9,6 @@ moonlightTrackPlayer = false;
 moonlightAmount = 10;
 
 moonlightLifetime = room_speed*random_range(8, 10);
-moonlightGraceTime = room_speed*.5;
+moonlightGraceTime = room_speed*.75;
 
 

@@ -1,10 +1,5 @@
 /// @description Follow target
 
-if (keyboard_check_pressed(ord("C"))) {
-	cameraWidth = 480;
-	cameraHeight = 270;
-}
-
 // Camera Size
 var camWidth = camera_get_view_width(view_camera[0]);
 var camHeight = camera_get_view_height(view_camera[0]);

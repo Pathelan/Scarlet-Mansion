@@ -1,6 +1,5 @@
 /// @description Reset Enemy Stagger UI
 
-
 if (drawEnemyStaggerTimer > 0 ) {
 	drawEnemyStaggerTimer--;
 } else {
@@ -10,4 +9,13 @@ if (drawEnemyStaggerTimer > 0 ) {
 		drawEnemyStaggerID = noone;	
 	}
 
+}
+
+// Item UI
+if (drawItemTimer > 0) {
+	drawItemTimer--;
+} else {
+	if (drawItemAlpha > 0) {
+		drawItemAlpha -= 0.05;
+	}
 }

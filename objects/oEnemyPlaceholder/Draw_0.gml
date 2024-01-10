@@ -18,7 +18,7 @@ if (global.DEBUG == false) {
 	exit;	
 }
 
-draw_set_alpha(.2);
+draw_set_alpha(.05);
 draw_circle_color(x, y, chaseRange, c_red, c_red, false);
 draw_set_alpha(1);
 

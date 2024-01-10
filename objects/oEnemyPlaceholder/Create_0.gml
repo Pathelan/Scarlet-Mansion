@@ -35,7 +35,7 @@ placeholderState = placeholderState.IDLE;
 stateShiftTimerMax = room_speed*2; // How Long the enemy has to wait before changing states.
 stateShiftTimer = stateShiftTimerMax;
 
-idleMoveTimer = room_speed*random_range(1, 5);
+idleMoveTimer = room_speed*random_range(0, 2);
 idleRange = 64; // Size they can move about in the idle range.
 idlePositionX = x;
 idlePositionY = y;
@@ -44,3 +44,5 @@ chaseRange = 128; // The range the enemy will follow the player at.
 attackRange = 72; // The range needed to perform an attack;
 attackTimeFrames = 0; // How Often the enemy can attack
 followPosition = [0, 0]; // 2D Array of the last player position.
+
+fullHealth = true;

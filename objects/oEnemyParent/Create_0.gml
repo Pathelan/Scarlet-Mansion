@@ -25,6 +25,7 @@ enemyStaggeredDamageMultiplier = 4; // Damage Multiplier when staggered.
 
 // Misc Variables
 enemyName = "James May Sumimasen";
+enemyDamage = 30;
 
 // Inherit the parent event
 event_inherited();

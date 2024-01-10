@@ -8,7 +8,7 @@ if (place_meeting(x, y, oCollision)) {
 }
 
 if (place_meeting(x, y, oPlayerBody)) {
-	oPlayerController.playerHealth -= irandom_range(24, 36);
+	oPlayerController.playerHealth -= irandom_range(projectileDamage*.8, projectileDamage*1.2);
 	instance_destroy();	
 }
 

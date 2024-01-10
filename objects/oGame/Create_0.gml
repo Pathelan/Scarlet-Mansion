@@ -1,6 +1,7 @@
 /// @description Initialise Variables
 randomise(); // Give Number Generation Random Properties
 
+
 // Set Global Variables
 global.DEBUG = false;
 global.TIMESCALE = 1;

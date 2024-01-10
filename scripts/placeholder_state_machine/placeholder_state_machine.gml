@@ -32,7 +32,7 @@ function placeholder_state_machine(){
 						return;
 				}
 				
-				move_towards_point(p.x, p.y, 0.75*global.TIMESCALE);
+				move_towards_point(p.x, p.y-16, 0.75*global.TIMESCALE);
 				
 				break;
 				
@@ -68,6 +68,7 @@ function placeholder_state_machine(){
 				} else {
 					var proj = instance_create_layer(x, y, "Instances", oEnemyProjectile);	
 					proj.direction += random_range(-5, 5); 
+					proj.projectileDamage = enemyDamage;
 					attackTimeFrames = 180;
 				}
 				
@@ -79,6 +80,9 @@ function placeholder_state_machine(){
 						placeholderState = placeholderState.IDLE;
 						isLost = 0;
 						drawLost = true;
+						var dir = point_direction(x, y, oPlayerBody.x, oPlayerBody.y);
+						idlePositionX = x + lengthdir_x(min(distance_to_object(oPlayerBody), 32), dir);
+						idlePositionY = y + lengthdir_y(min(distance_to_object(oPlayerBody), 32), dir);
 						stateShiftTimer = stateShiftTimerMax;
 						return;
 				}
