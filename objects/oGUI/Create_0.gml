@@ -14,3 +14,19 @@ drawEnemyName = "";
 drawEnemyStaggerAlpha = 1;
 
 #endregion
+
+winCountdown = 0; // Who Knows?
+winPhase = 0;
+
+winScreen = false; // Player Win
+deathScreen = false; // Player Death
+
+#region Item UI
+drawItemTimer = 0;
+drawItemAlpha = 0;
+
+drawItemName = "";
+drawItemDescription = "";
+drawItemSprite = sItemWings;
+
+#endregion

@@ -1,0 +1,1 @@
+text = "Press S to drop down platforms.";

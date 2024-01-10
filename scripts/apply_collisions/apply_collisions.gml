@@ -17,7 +17,7 @@ function apply_collisions(applyGravity = true, grav = global.GRAVITY){
 	
 	
 	#region Vertical Collisions
-	if (place_meeting(x, y+vspd*global.TIMESCALE, oCollision)) {
+	if (place_meeting(x, (y+vspd)*global.TIMESCALE, oCollision)) {
 		while (!place_meeting(x, y+sign(vspd), oCollision)) {
 			y += sign(vspd);
 		}

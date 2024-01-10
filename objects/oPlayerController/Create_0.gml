@@ -30,7 +30,7 @@ spearStaggerMultiplier = 40; // Increases the amount of stagger dealt.
 spearAlternateFire = false; // Allows the Spear to fire as a projectile.
 spearAlternateDamage = 180; // Damage Alternate Spear Damage Does
 spearAlternateStaggerMultiplier = 100; // How effective Spear Fire is at staggering
-spearAlternateCooldown = room_speed*8; // How Long it takes for spear to return to player.
+spearAlternateCooldown = room_speed*5; // How Long it takes for spear to return to player.
 
 // Stagger Stats
 staggerTimer = 150; // Length time will be slowed in frames.

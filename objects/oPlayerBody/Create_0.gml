@@ -1,5 +1,8 @@
 /// @description Initialise Vairables
 
+// Movement Vairables
+canMove = true;
+
 // Create Spear
 playerSpear = instance_create_layer(x, y, "Instances", oPlayerSpear);
 

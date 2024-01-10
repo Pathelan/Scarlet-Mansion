@@ -13,7 +13,10 @@ if (global.DEBUG == false) {
 	exit;	
 }
 
-// Only Draw if enemies are present
+draw_text(x, y-48, "T: "+ string(slowTimer));
+draw_text(x, y-32, "I: "+ string(slowIntensity));
+
+/* Only Draw if enemies are present
 if (instance_exists(oAttackableParent)) {
 	// Draw Fate Lines
 	for (var i=-3; i<4; i++) {
@@ -32,6 +35,5 @@ if (instance_exists(oAttackableParent)) {
 		draw_line(x, y, _enemy.x+_x, _enemy.y+_y);
 	}
 }
-draw_text(x, y-48, "T: "+ string(slowTimer));
-draw_text(x, y-32, "I: "+ string(slowIntensity));
+
 

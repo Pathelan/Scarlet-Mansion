@@ -1,0 +1,1 @@
+text = "Left Click to Attack";

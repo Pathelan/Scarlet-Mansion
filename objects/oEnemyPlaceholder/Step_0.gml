@@ -6,6 +6,20 @@
 // Inherit the parent event
 event_inherited();
 
+// Set Health to max
+if (fullHealth) { 
+	// For some reason setting the current health doesn't update when using creation code
+	currentObjectHealth = maxObjectHealth;
+	fullHealth = false;
+}
+
+// Die
+if (currentObjectHealth <= 0) {
+	part_particles_create(oParticleSystem.particleSystem, x, y, oParticleSystem.particleEnemySkull, 1);
+	instance_destroy();	
+}
+
+
 // Stunned
 if (isStunned) {
 	placeholderState = placeholderState.STUNNED;	
@@ -42,7 +56,7 @@ if (isAlert < 30) {
 if (isLost < 30) {
 	isLost += 1*global.TIMESCALE;
 } else {
-	drawLost = false;	
+	drawLost = false
 }
 
 // State Changes

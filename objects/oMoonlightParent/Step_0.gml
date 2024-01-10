@@ -14,7 +14,7 @@ if (moonlightSpeed == 0) {
 	apply_collisions(true, 0.075);
 }
 
-if (distance_to_object(oPlayerBody) < 96 && moonlightTrackPlayer == false && isGrounded) {
+if (distance_to_object(oPlayerBody) < 84 && moonlightTrackPlayer == false && moonlightGraceTime <= 0) {
 	moonlightTrackPlayer = true;
 	hspd = 0;
 }
