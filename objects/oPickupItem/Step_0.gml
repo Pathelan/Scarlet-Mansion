@@ -37,10 +37,10 @@ if (distance_to_object(oPlayerBody) <= 8) {
 		
 	case 1: // Spear
 		oPlayerController.powerup[1] = true;
+		oPlayerController.spearSprite = sPlayerSpear_mk2;
 		oPlayerController.spearDamageMultiplier = 1.5;
 		oPlayerController.spearCooldown = 60;
 		oPlayerController.spearFastCooldown = 30;
-		oPlayerController.spearAlternateFire = true;
 		
 		oGUI.drawItemTimer = room_speed*5;
 		oGUI.drawItemName = "Spear Upgrade";

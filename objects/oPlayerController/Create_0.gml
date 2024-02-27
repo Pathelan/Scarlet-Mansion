@@ -18,9 +18,12 @@ powerup[2] = false; // Stopwatch
 
 #endregion
 
+// Misc Spear Variables
+spearSprite = sPlayerSpearLong;
+
 // Spear Stats
 spearLastObjectHit = oGame.object_index; // Last Object Hit with Spear.
-spearRadius = 14; // Radius of Attack
+spearRadius = 18; // Radius of Attack
 spearCooldown = 80; // Cooldown of Attack in frames
 spearFastCooldown = 40; // Cooldown of Attack in Frames, used after successfully landing last hit.
 spearDamage = 25; // Damage, modified by +/-20% when attacking
