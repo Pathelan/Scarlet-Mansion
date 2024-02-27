@@ -3,3 +3,5 @@
 event_inherited();
 
 wall = instance_create_layer(x, y, "Instances", oCollision);
+
+objectInvincible = 0;

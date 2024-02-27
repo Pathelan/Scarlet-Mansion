@@ -1,8 +1,10 @@
 function player_spear_primary(list = hitObjects){
 	if (image_index > 2 && image_index < 7) {
 		_dir = point_direction(x, y, mouse_x, mouse_y);
-		_xx = lengthdir_x(_len, _dir);
-		_yy = lengthdir_y(_len, _dir);
+		buffer_poke(oPlayerController.bufferSpearPosition, 0, buffer_s16, lengthdir_x(_len, _dir));
+		buffer_poke(oPlayerController.bufferSpearPosition, 8, buffer_s16, lengthdir_y(_len, _dir));
+		_xx = buffer_peek(oPlayerController.bufferSpearPosition, 0, buffer_s16);
+		_yy = buffer_peek(oPlayerController.bufferSpearPosition, 8, buffer_s16);
 
 		var _yoffset = 1;
 	
