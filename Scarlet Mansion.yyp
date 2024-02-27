@@ -57,6 +57,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player UI","folderPath":"folders/Sprites/UI/Player UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Spear","folderPath":"folders/Scripts/Player Scripts/Spear.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,

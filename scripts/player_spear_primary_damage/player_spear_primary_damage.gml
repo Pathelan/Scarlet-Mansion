@@ -1,9 +1,8 @@
 function player_spear_primary_damage(target){
 	
-	// Damage
+	// Deal Damage
 	damageAmount = calculate_damage(target);
-	buffer_poke(oPlayerController.bufferSpearDamage, 0, buffer_s32, damageAmount);
-				
+	buffer_poke(oPlayerController.bufferSpearDamage, 0, buffer_s32, damageAmount); // Store Damage in buffer so it can be accessed in spear.
 	currentObjectHealth -= buffer_peek(oPlayerController.bufferSpearDamage, 0, buffer_s32);
 	objectInvincible = room_speed/2;
 	

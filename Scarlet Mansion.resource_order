@@ -42,6 +42,7 @@
     {"name":"UI","order":5,"path":"folders/Sprites/UI.yy",},
     {"name":"Enemy UI","order":4,"path":"folders/Sprites/UI/Enemy UI.yy",},
     {"name":"Timelines","order":10,"path":"folders/Timelines.yy",},
+    {"name":"Spear","order":13,"path":"folders/Scripts/Player Scripts/Spear.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sEnemyBullet","order":3,"path":"sprites/sEnemyBullet/sEnemyBullet.yy",},

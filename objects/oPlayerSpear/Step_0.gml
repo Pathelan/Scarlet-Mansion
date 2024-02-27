@@ -9,13 +9,13 @@ if (distance_to_point(mouse_x, mouse_y) > 4) {
 
 
 // Primary Attack
-player_spear_primary_cooldown();
-player_spear_primary();
+player_spear_primary_cooldown(); // Used for attack cooldowns
+player_spear_primary(); // Contains all the Attacking and Staggering code.
 
 
 
 // Alternate Attack
-player_spear_alternate();
+player_spear_alternate(); // Secondary/Alternative attack code
 
 
 
