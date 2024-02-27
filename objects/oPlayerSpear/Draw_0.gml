@@ -17,8 +17,8 @@ for (var i = 0; i<ds_list_size(hitObjects); i++) {
 
 // Draw Collision Box
 if (image_index > 2 && image_index < 6) {
-	var _RADIUS = 14;
-	var _len = sprite_width - (_RADIUS/2);
+	var _RADIUS = 18;
+	var _len = sprite_width - (_RADIUS/2) - 4;
 	var _dir = point_direction(x, y, mouse_x, mouse_y);
 	var _xx = lengthdir_x(_len, _dir);
 	var _yy = lengthdir_y(_len, _dir);

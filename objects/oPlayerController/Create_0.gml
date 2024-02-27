@@ -21,6 +21,9 @@ powerup[2] = false; // Stopwatch
 // Misc Spear Variables
 spearSprite = sPlayerSpearLong;
 
+// Buffer
+bufferSpearDamage = buffer_create(64, buffer_fixed, 4);
+
 // Spear Stats
 spearLastObjectHit = oGame.object_index; // Last Object Hit with Spear.
 spearRadius = 18; // Radius of Attack

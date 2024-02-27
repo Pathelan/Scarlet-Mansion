@@ -41,7 +41,7 @@ if (distance_to_object(oPlayerBody) <= 8) {
 		oPlayerController.spearDamageMultiplier = 1.5;
 		oPlayerController.spearCooldown = 60;
 		oPlayerController.spearFastCooldown = 30;
-		
+			
 		oGUI.drawItemTimer = room_speed*5;
 		oGUI.drawItemName = "Spear Upgrade";
 		oGUI.drawItemDescription = 

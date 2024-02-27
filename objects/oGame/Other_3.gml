@@ -7,4 +7,8 @@ ds_list_destroy(oPlayerSpear.hitObjects);
 #endregion
 
 
+#region Delete Buffers
 
+buffer_delete(oPlayerController.bufferSpearDamage);
+
+#endregion

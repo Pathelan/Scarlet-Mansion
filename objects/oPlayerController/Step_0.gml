@@ -4,15 +4,15 @@
 // Level Up
 if (playerMoonlight >= playerMaxMoonlight) {
 	playerMoonlight -= playerMaxMoonlight;
-	playerMaxMoonlight *= 1.25;
+	playerMaxMoonlight *= 1.5;
 	playerLevel += 1;
 	
 	// Stat Increases
-	playerMaxHealth = floor(playerMaxHealth*1.1);
+	playerMaxHealth = floor(playerMaxHealth*1.05);
 	playerHealth = playerMaxHealth;
 	
 	spearDamage += floor(spearDamage/20) + 2;
-	spearAlternateDamage += floor(spearDamage/10) + 15;
+	spearAlternateDamage += floor(spearDamage/10) + 8;
 	spearStaggerMultiplier += irandom_range(1, 3);
 }
 

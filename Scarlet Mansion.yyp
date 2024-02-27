@@ -98,6 +98,7 @@
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"gui_win_timer","path":"scripts/gui_win_timer/gui_win_timer.yy",},},
     {"id":{"name":"sItemSpear","path":"sprites/sItemSpear/sItemSpear.yy",},},
+    {"id":{"name":"calculate_stagger","path":"scripts/calculate_stagger/calculate_stagger.yy",},},
     {"id":{"name":"oDamageNumbers","path":"objects/oDamageNumbers/oDamageNumbers.yy",},},
     {"id":{"name":"player_spear_primary_damage","path":"scripts/player_spear_primary_damage/player_spear_primary_damage.yy",},},
     {"id":{"name":"oOneWayWall","path":"objects/oOneWayWall/oOneWayWall.yy",},},
