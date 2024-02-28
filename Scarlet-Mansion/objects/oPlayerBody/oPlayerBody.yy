@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sPlayerBody",
-    "path": "sprites/sPlayerBody/sPlayerBody.yy",
+    "name": "sPlaceholderPlayer",
+    "path": "sprites/sPlaceholderPlayer/sPlaceholderPlayer.yy",
   },
   "spriteMaskId": null,
   "visible": true,

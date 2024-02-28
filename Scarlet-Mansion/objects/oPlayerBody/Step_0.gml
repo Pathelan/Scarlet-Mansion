@@ -2,15 +2,10 @@
 
 if (canMove) {
 	player_collisions(); // Movement and Collisions
+	// Direction controlled in player_movement
 }
 
-if (mouse_x < x) {
-	playerDirection = -1;	
-} else {
-	playerDirection = 1;	
-}
 
-image_xscale = playerDirection;
 
 
 // Debug

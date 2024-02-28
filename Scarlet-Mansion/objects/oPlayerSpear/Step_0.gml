@@ -18,16 +18,16 @@ player_spear_primary(); // Contains all the Attacking and Staggering code.
 player_spear_alternate(); // Secondary/Alternative attack code
 
 
-
-
-#region Debug
 if (instance_exists(oPlayerBody)) {
 	x = oPlayerBody.x;
-	y = oPlayerBody.y;
+	y = oPlayerBody.y+4;
 } else {
 	show_message("Spear exists after Player Destroyed!!");
 	exit;
 }
+
+#region Debug
+
 	
 
 

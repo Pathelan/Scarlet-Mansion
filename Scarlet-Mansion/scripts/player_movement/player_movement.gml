@@ -27,4 +27,13 @@ function player_movement(){
 		vspd = -jumpspeed;
 		jumpLeft --;
 	}
+	
+	// Direction
+	if (mouse_x < x) {
+	playerDirection = -1;	
+	} else {
+		playerDirection = 1;	
+	}
+	image_xscale = playerDirection;
+	
 }
