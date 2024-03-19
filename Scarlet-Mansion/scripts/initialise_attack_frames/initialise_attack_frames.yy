@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "player_spear_primary_damage",
+  "name": "initialise_attack_frames",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Spear",
-    "path": "folders/Scripts/Player Scripts/Weapons/Spear.yy",
+    "name": "Weapons",
+    "path": "folders/Scripts/Player Scripts/Weapons.yy",
   },
 }

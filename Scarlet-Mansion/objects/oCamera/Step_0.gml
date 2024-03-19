@@ -22,7 +22,7 @@ if (target != noone) {
 			break;
 		
 		case cameraState.followSpear:
-			target = oPlayerSpear;
+			target = oPlayerWeapon;
 			var _dir = point_direction(x, y, mouse_x, mouse_y);
 			var _len = 32;
 			var _x = lengthdir_x(_len, _dir);

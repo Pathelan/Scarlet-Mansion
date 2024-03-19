@@ -8,8 +8,8 @@ if (phase < 3) {
 	instance_destroy(oEnemyPlaceholder);
 	// Stop Movement
 	oPlayerBody.canMove = false;
-	oPlayerSpear.canAttack = false;
-	oPlayerSpear.canFire = false;
+	oPlayerWeapon.canAttack = false;
+	oPlayerWeapon.canFire = false;
 	
 	// Display Win Screen
 	oGUI.winScreen = true;

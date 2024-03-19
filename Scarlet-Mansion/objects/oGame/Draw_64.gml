@@ -12,5 +12,7 @@ draw_text(32, 32, "Timescale: " + string(global.TIMESCALE));
 draw_text(32, 64, "Time Slow Timer: " + string(alarm[0]));
 draw_text(32, 96, "isGrounded: " + string(oPlayerBody.isGrounded));
 draw_text(32, 128, "Last Hit: " + string(oPlayerController.spearLastObjectHit));
+draw_text(32, 256, "Current Weapon: " + string(oPlayerController.playerCurrentWeapon));
+draw_text(32, 288, "Offhand Weapon: " + string(oPlayerController.playerOffhandWeapon));
 
 

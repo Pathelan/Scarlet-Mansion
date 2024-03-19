@@ -18,6 +18,10 @@ powerup[2] = false; // Stopwatch
 
 #endregion
 
+// Weapons
+playerCurrentWeapon = "Spear";
+playerOffhandWeapon = "Sword";
+
 // Misc Spear Variables
 spearSprite = sPlayerSpearLong;
 

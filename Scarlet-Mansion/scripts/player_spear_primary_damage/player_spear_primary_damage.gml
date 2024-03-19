@@ -11,8 +11,8 @@ function player_spear_primary_damage(target){
 	damageNumbers.damageNumber = buffer_peek(oPlayerController.bufferSpearDamage, 0, buffer_s32);
 	
 	// Particles
-	var _xx = buffer_peek(oPlayerController.bufferSpearPosition, 0, buffer_s16);
-	var _yy = buffer_peek(oPlayerController.bufferSpearPosition, 8, buffer_s16);
+	var _xx = buffer_peek(oPlayerController.bufferSpearPosition, 0, buffer_f16);
+	var _yy = buffer_peek(oPlayerController.bufferSpearPosition, 8, buffer_f16);
 	oParticleSystem.dir = -point_direction(oPlayerBody.x, oPlayerBody.y, mouse_x, mouse_y);
 	part_particles_create(oParticleSystem.particleSystem, oPlayerBody.x+_xx, oPlayerBody.y+_yy, oParticleSystem.particleSpearHit, 5);
 

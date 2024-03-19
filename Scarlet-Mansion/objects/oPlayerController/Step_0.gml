@@ -19,8 +19,8 @@ if (playerMoonlight >= playerMaxMoonlight) {
 // Death
 if (playerHealth <= 0) {
 	oPlayerBody.canMove = false;	
-	oPlayerSpear.canAttack = false;	
-	oPlayerSpear.canFire = false;
+	oPlayerWeapon.canAttack = false;	
+	oPlayerWeapon.canFire = false;
 	
 	oGUI.deathScreen = true;
 }

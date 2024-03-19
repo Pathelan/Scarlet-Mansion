@@ -11,7 +11,7 @@ instance_activate_region(_vx - 128, _vy - 128, _vw + 128, _vh + 256, true);
 
 instance_activate_object(oPlayerController);
 instance_activate_object(oPlayerBody);
-instance_activate_object(oPlayerSpear);
+instance_activate_object(oPlayerWeapon);
 instance_activate_object(oCamera);
 instance_activate_object(oParallax);
 instance_activate_object(oCrosshair);

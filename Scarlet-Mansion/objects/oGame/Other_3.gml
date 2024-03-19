@@ -2,7 +2,7 @@
 
 #region Deactivate DS Lists
 
-ds_list_destroy(oPlayerSpear.hitObjects);
+ds_list_destroy(oPlayerWeapon.hitObjects);
 
 #endregion
 

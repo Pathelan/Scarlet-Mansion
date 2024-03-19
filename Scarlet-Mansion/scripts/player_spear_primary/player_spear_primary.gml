@@ -3,10 +3,10 @@ function player_spear_primary(list = hitObjects){
 		
 		// Get Lengthdir
 		_dir = point_direction(x, y, mouse_x, mouse_y);
-		buffer_poke(oPlayerController.bufferSpearPosition, 0, buffer_s16, lengthdir_x(_len, _dir)); // Store it in buffer for particles
-		buffer_poke(oPlayerController.bufferSpearPosition, 8, buffer_s16, lengthdir_y(_len, _dir));
-		_xx = buffer_peek(oPlayerController.bufferSpearPosition, 0, buffer_s16);
-		_yy = buffer_peek(oPlayerController.bufferSpearPosition, 8, buffer_s16);
+		buffer_poke(oPlayerController.bufferSpearPosition, 0, buffer_f16, lengthdir_x(_len, _dir)); // Store it in buffer for particles
+		buffer_poke(oPlayerController.bufferSpearPosition, 8, buffer_f16, lengthdir_y(_len, _dir));
+		_xx = buffer_peek(oPlayerController.bufferSpearPosition, 0, buffer_f16);
+		_yy = buffer_peek(oPlayerController.bufferSpearPosition, 8, buffer_f16);
 
 		var _yoffset = 1;
 	

@@ -4,7 +4,7 @@
 canMove = true;
 
 // Create Spear
-playerSpear = instance_create_layer(x, y, "Instances", oPlayerSpear);
+playerSpear = instance_create_layer(x, y, "Instances", oPlayerWeapon);
 
 // Movement Variables
 playerDirection = 1;
